@@ -1,0 +1,12 @@
+def name_shuffler(str_):
+    first_name = ''
+    last_name = ''
+    space = str_.find(' ')
+    for i in range(len(str_)):
+        if i < space:
+            first_name += str_[i]
+        elif i == space:
+            continue
+        else:
+            last_name += str_[i]
+    return last_name + ' ' + first_name
